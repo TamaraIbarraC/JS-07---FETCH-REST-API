@@ -2,7 +2,6 @@
 //
 // POST
 const BASE_URL = 'https://pokeapi.co/api/v2/';
-
 // Fetch no async
 /*
 fetch(BASE_URL + 'pokemon/ditto')
@@ -10,7 +9,6 @@ fetch(BASE_URL + 'pokemon/ditto')
     .then(data => console.log(data));
 */
 // fetch async
-
 const fetchPokemon = async (pokemon) => {
     try {
         const response = await fetch(`${BASE_URL}pokemon/${pokemon}`);
